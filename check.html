@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="penguins-header">Be the Penguins</h1>
+    <button id="header-button">Start</button>
+
+    <script>
+        function toggleColor() {
+            debugger;
+            var finalText = document.getElementById("penguins-header");
+
+            if (!finalText.innerText || finalText.innerText == "I am penguin")
+                finalText.innerText = "Be the Penguins";
+
+            else
+                finalText.innerText = "I am penguin";
+        }
+
+        document.getElementById("header-button").addEventListener("click", function () {
+            // console.log("cliked");
+            toggleColor()
+        })
+    </script>
+
+</body>
+
+</html>
